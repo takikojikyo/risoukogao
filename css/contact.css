@@ -1,0 +1,73 @@
+/*コンタクト*/
+.contact{
+  position: relative;
+  padding: 120px 0 80px;
+}
+.contact .sectiontitle{
+  text-align: center;
+}
+.con-red{
+  color: red;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.contact-form {
+  margin-bottom: 50px;
+}
+.contact-form dt {
+  margin-bottom: 5px;
+}
+
+.contact-form dd {
+  margin-bottom: 15px;
+}
+
+.contact-form dd input,
+.contact-form dd textarea {
+  width: 100%;
+  border: solid 1px #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-form dd textarea {
+  height: 10rem;
+}
+
+.submit-btn {
+  text-align: center;
+  position: relative;
+}
+.submit-btn img{
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translateY(-50%);
+}
+
+.submit-btn input {
+  background: #fff;
+  border: 3px solid #F5C4CC;
+  width: 40%;
+  color: #333;
+  padding: 15px 0;
+  font-size: 24px;
+  border-radius: 30px;
+  transition: all 0.5s;
+  
+}
+.submit-btn input:hover{
+  background: #F5C4CC;
+}
+
+
+@media(max-width:760px){
+
+  .submit-btn img{
+    left: 28%;
+  }
+  .submit-btn input {
+    width: 80%;
+}
+}

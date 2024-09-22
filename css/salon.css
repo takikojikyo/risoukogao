@@ -1,0 +1,8 @@
+/*コンタクト*/
+.salon{
+  position: relative;
+  padding: 120px 0 80px;
+}
+.salon .sectiontitle{
+  text-align: center;
+}
