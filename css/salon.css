@@ -6,3 +6,71 @@
 .salon .sectiontitle{
   text-align: center;
 }
+.salon-box:not(:last-of-type){
+  margin-bottom: 120px;
+}
+.salon-place{
+  text-align: center;
+  background: #F5C4CC;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+.salon-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.salon-list li{
+border: 1px solid #ccc;
+padding: 40px;
+border-radius: 10px;
+}
+.salon-list .salon-1,.salon-list p:not(:last-of-type){
+  margin-bottom: 10px;
+}
+.salon-detail{
+  margin-bottom: 30px;
+}
+.salon-btn{
+  display: block;
+  width: 80%;
+  text-align: center;
+  background: #8E3141;
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.salon-btn:hover{
+  opacity: 0.7;
+}
+
+@media(max-width:960px){
+  .salon-btn{
+    width: 100%;
+  }
+  .salon-list li{
+    padding: 20px;
+    }
+}
+@media(max-width:760px){
+  .salon-list{
+    grid-template-columns: 1fr ;
+  }
+  .salon-btn{
+    width: 80%;
+  }
+  .salon{
+    padding: 80px 0;
+  }
+  .salon-box:not(:last-of-type){
+    margin-bottom: 80px;
+  }
+}
+@media(max-width:500px){
+  .salon-btn{
+    width: 100%;
+  }
+}

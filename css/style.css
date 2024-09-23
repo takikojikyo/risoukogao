@@ -784,7 +784,7 @@ left: 5%;
 /*フッター*/
 
 .f-flex{
-  padding: 50px 3%;
+  padding: 40px 3% 20px;
   display: flex;
   align-items: end;
   justify-content: space-between;
