@@ -42,14 +42,14 @@ img{
 
 }
 .sectiontitle{
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 50px;
 }
 .sectiontitle .en{
   font-size: 48px;
 }
 .sectiontitle .ja{
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .en{
@@ -656,7 +656,9 @@ margin-bottom: 10px;
   text-align: center;
   margin-bottom: 80px;
 }
-
+.fd2-texta{
+  font-size: 48px;
+}
 .fd-2-tex1{
   margin-bottom: 80px;
 }
@@ -973,7 +975,13 @@ margin-bottom: 10px;
     .reserve-box2{
       padding: 100px 20px 40px;
     }
-    
+
+    .sectiontitle .en{
+      font-size: 36px;
+    }
+    .sectiontitle .ja{
+      font-size: 20px;
+    }
 
     
 
@@ -1183,7 +1191,9 @@ box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   top: 40px;
   width: 80px;
 }
-
+.fd2-texta{
+  font-size: 36px;
+}
 /*concept*/
 .concept{
   margin-bottom: 80px;
@@ -1368,6 +1378,9 @@ left: 0;
 }
 .fd-2-tex2>img{
   width: 100px;
+}
+.fd2-texta{
+  font-size: 28px;
 }
 
 /*feature*/
