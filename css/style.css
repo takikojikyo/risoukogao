@@ -1078,7 +1078,7 @@ margin-top: 100px;
   bottom:  -45%;
   left: 1%;
   z-index: 10;
-  width: auto;
+width: auto;
 }
 .mv-tex1-1,.mv-tex1-1a{
 flex-direction: column;
@@ -1290,24 +1290,26 @@ left: 0;
   /*front-mainvisual*/
   .front-mainvisual{
     margin-top: 70px;
-    margin-bottom: 550px;
+    margin-bottom: 540px;
     height: auto;
+    min-height: 350px;
   }
   .fm-img{
     height: auto;
+    min-height: 350px;
   }
   .mv-tex1{
-    bottom:  -85%;
+    bottom:  -76%;
   }
   .circle-1{
-    width: 80vw; /* ビューポート幅の50% */
-    height: 80vw; /* ビューポート幅の50% */
+    width: 85vw; /* ビューポート幅の50% */
+    height: 85vw; /* ビューポート幅の50% */
   }
   
   
   .mv-tex2{
     text-align: center;
-    bottom: -130%;
+    bottom: -118%;
     z-index: 9;
   }
   
@@ -1396,9 +1398,4 @@ left: 0;
 .feature-box{
   width: 90%;
 }
-}
-@media(max-width:400px){
-  .front-mainvisual{
-    margin-bottom: 470px;
-  }
 }
