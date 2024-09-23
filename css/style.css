@@ -33,13 +33,13 @@ img{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 3%;
-  overflow: hidden; /* Prevent content from overflowing the container */
+ /* Prevent content from overflowing the container */
 }
 .inner{
   max-width: 800px;
   margin: 0 auto;
   padding: 0 3%;
-  overflow: hidden;
+
 }
 .sectiontitle{
   line-height: 1;
@@ -174,18 +174,6 @@ right: 5%;
 }
 
 
-/* Add overflow hidden to prevent overflow of absolutely positioned elements */
-.front-message1,
-.front-message2,
-.front-trouble,
-.front-resolution,
-.front-change,
-.front-deployment,
-.concept,
-.feature {
-  overflow: hidden;
-}
-
 /*ヘッダー*/
 header{
   width: 100%;
@@ -246,6 +234,7 @@ header{
   height: 100vh;
   position: relative;
   max-width: 100%;
+  margin-top: 90px;
 }
 .fm-img{
   height: 100vh;
