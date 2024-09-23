@@ -1,8 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body{
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #333;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 html{
   font-size: 100%;
@@ -27,11 +33,13 @@ img{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 3%;
+  overflow: hidden; /* Prevent content from overflowing the container */
 }
 .inner{
   max-width: 800px;
   margin: 0 auto;
   padding: 0 3%;
+  overflow: hidden;
 }
 .sectiontitle{
   line-height: 1;
@@ -165,6 +173,19 @@ right: 5%;
   transition: all 1s;
 }
 
+
+/* Add overflow hidden to prevent overflow of absolutely positioned elements */
+.front-message1,
+.front-message2,
+.front-trouble,
+.front-resolution,
+.front-change,
+.front-deployment,
+.concept,
+.feature {
+  overflow: hidden;
+}
+
 /*ヘッダー*/
 header{
   width: 100%;
@@ -192,6 +213,7 @@ header{
 
 .header-menu{
   display: flex;
+  flex-wrap: wrap;
 }
 .header-menu li{
   margin-left: 20px;
@@ -223,6 +245,7 @@ header{
 .front-mainvisual{
   height: 100vh;
   position: relative;
+  max-width: 100%;
 }
 .fm-img{
   height: 100vh;
@@ -279,7 +302,7 @@ width: 20px;
   position: absolute;
   bottom: 10px;
   right: 10px;
-  width: 100%;
+  width: 90%;
 }
 .circle-2{
   margin-left: auto;
@@ -788,6 +811,7 @@ left: 5%;
   display: flex;
   align-items: end;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .f-flex img{
   width: 150px;
@@ -795,6 +819,7 @@ left: 5%;
 }
 .footer-menu{
   display: flex;
+  flex-wrap: wrap;
 }
 .footer-menu li{
   margin-left: 20px
