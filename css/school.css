@@ -1,7 +1,9 @@
+/*school-mainvisual*/
 .school-mainvisual{
   position: relative;
   max-width: 100%;
   margin-top: 90px;
+  margin-bottom: 80px;
 }
 .sm-img{
   height: 100vh;
@@ -50,6 +52,175 @@ margin-left: auto;
 }
 
 
+/*school-tex1*/
+.school-tex1{
+  margin-bottom: 80px;
+}
+.school-tex1 p{
+  background: #F5C4CC;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+
+/*school-trouble*/
+.school-trouble{
+  position: relative;
+  padding: 80px 0;
+  background: #EFE9E9;
+  margin-bottom: 120px;
+}
+.stbox{
+  position: relative;
+  margin: 50px 0;
+  background: #fff;
+  padding: 40px ;
+  border-radius: 20px;
+  box-sizing: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.stbox>img{
+  width: 130px;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+}
+.st-title{
+  margin-bottom: 30px;
+}
+.stbox-list li{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.stbox-list li img{
+  width: 20px;
+  margin-right: 5px;
+}
+.stbox-list p{
+  line-height: 1.2;
+}
+
+
+/*school-resolution*/
+.school-resolution{
+  margin-bottom: 120px;
+}
+.sr-list{
+  position: relative;
+}
+/* .sr-list li{
+  margin-bottom: 150px;
+} */
+.sr-sec1{
+  margin-bottom: 120px;
+}
+.sr-img img{
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+.sr-img2 img{
+display: block;
+margin-left: auto;
+}
+.sr-box{
+  position: absolute;
+  top: 150px;
+  z-index: 10;
+  width: 65%;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(251,246,246,0.9);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+.sr-box1{
+  right: 0;
+}
+.sr-box2{
+  left: 0;
+}
+.sr-box-comment{
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  border-radius: 10px;
+  display: inline-block;
+  background: #fff;
+  border:2px solid #F5C4CC;
+}
+.sr-sec2{
+  margin-bottom: 80px;
+  position: relative;
+  padding: 50px 0;
+}
+.srcogao-img1{
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.srcogao-img2{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.dot{
+  position: relative;
+}
+.dot::after{
+  content: "";
+  background: #8E3141;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 0px;
+  left: 40%;
+}
+
+.sr-sec3{
+  margin-bottom: 250px;
+}
+.sr-box2 h3{
+margin-bottom: 20px;
+}
+
+.sr-sec4{
+  margin-bottom: 120px;
+}
+.sr-list2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sr-list2 li{
+  width: 49%;
+  
+}
+.sr-list2 h3{
+  margin-bottom: 20px;
+}
+.sr-list2 img{
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+.sr-list2-img{
+  position: relative;
+}
+.sr-list2-img::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent transparent #f5c4cc;
+  border-width: 25px 0px 25px 43.3px;
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+}
+
 @media(max-width:960px){
   .sm-tex1a h2{
     font-size: 36px;
@@ -70,21 +241,26 @@ margin-left: auto;
     min-height: 350px;
   }
 .sm-img{
-  margin-bottom: 400px;
+  margin-bottom: 350px;
   height: auto;
   min-height: 350px;
   object-position: 50% 50%;
 }
 .sm-tex1{
   position: absolute;
-  top: 45%;
+  top: 32%;
   right:auto;
   left: 2%;
   z-index: 10;
+  width: 100%;
 }
 .circle-3{
-  width: 420px;
-  height: 420px;
+  /* width: 420px;
+  height: 420px; */
+  width: 65vw; /* ビューポート幅の50% */
+  height: 65vw; /* ビューポート幅の50% */
+  max-width: 90vmin; /* 最大サイズをビューポートの縦横の短い方の90%に制限 */
+  max-height: 90vmin;
 box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 margin-left: 0;
 }
@@ -108,27 +284,36 @@ margin-left: 0;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 
+
+/*school-trouble*/
+.school-trouble{
+  margin-bottom: 80px;
+}
+.stbox>img{
+  width: 100px;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+}
+
 }
 
 @media(max-width:500px){
-  .school-mainvisual{
-    margin-top: 70px;
-    margin-bottom: 550px;
-    height: auto;
-  }
+ 
   .sm-img{
-    height: auto;
     margin-bottom: 250px;
-  }
+  } 
 .sm-tex1a h2{
   font-size: 28px;
 }
 .circle-3{
-  width: 80vw; /* ビューポート幅の50% */
-  height: 80vw; /* ビューポート幅の50% */
-  opacity: 0.9;
-  max-width: 90vmin; /* 最大サイズをビューポートの縦横の短い方の90%に制限 */
-  max-height: 90vmin;
+  width: 300px; /* ビューポート幅の50% */
+  height: 300px; /* ビューポート幅の50% */
 }
 
+
+
+.stbox{
+  padding: 20px;
+}
 }

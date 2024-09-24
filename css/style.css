@@ -32,7 +32,7 @@ img{
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 3%;
+  padding: 0 2%;
  /* Prevent content from overflowing the container */
 }
 .inner{
@@ -1071,11 +1071,19 @@ margin-top: 100px;
 
 /*front-mainvisual*/
 .front-mainvisual{
-  margin-bottom: 500px;
+  margin-top: 0px;
+  margin-bottom: 530px;
+  height: auto;
+  min-height: 450px;
 }
+.fm-img{
+  height: auto;
+  min-height: 450px;
+}
+
 .mv-tex1{
   position: absolute;
-  bottom:  -45%;
+  bottom:  -60%;
   left: 1%;
   z-index: 10;
 width: auto;
@@ -1085,8 +1093,8 @@ flex-direction: column;
 width: 100%;
 }
 .circle-1{
-  width: 60vw; /* ビューポート幅の50% */
-  height: 60vw; /* ビューポート幅の50% */
+  width: 65vw; /* ビューポート幅の50% */
+  height: 65vw; /* ビューポート幅の50% */
   max-width: 90vmin; /* 最大サイズをビューポートの縦横の短い方の90%に制限 */
   max-height: 90vmin;
 box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
@@ -1116,8 +1124,9 @@ margin-bottom: 10px;
 }
 
 .mv-tex2{
+  width: auto;
   text-align: center;
-  bottom: -65%;
+  bottom: -87%;
   z-index: 9;
 }
 .circle-2{
@@ -1130,10 +1139,12 @@ margin-bottom: 10px;
 box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 .mv-tex2 p{
+  width: 100%;
   position: absolute;
-  right: 10%;
+  right: auto;
+  left: 50%;
   top:50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
 
 /*message1*/
@@ -1289,13 +1300,10 @@ left: 0;
 
   /*front-mainvisual*/
   .front-mainvisual{
-    margin-top: 70px;
-    margin-bottom: 540px;
-    height: auto;
+    margin-bottom: 560px;
     min-height: 350px;
   }
   .fm-img{
-    height: auto;
     min-height: 350px;
   }
   .mv-tex1{
@@ -1308,17 +1316,14 @@ left: 0;
   
   
   .mv-tex2{
-    text-align: center;
-    bottom: -118%;
+    bottom: -128%;
     z-index: 9;
   }
-  
-  .mv-tex2 p{
-    position: absolute;
-    right: 5%;
-    top:37%;
-    transform: translateY(0%);
+  .circle-2{
+    width: 60vw; /* ビューポート幅の50% */
+    height: 60vw; /* ビューポート幅の50% */
   }
+ 
 
   .m2-box2{
     margin: 30px 0 80px;
