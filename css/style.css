@@ -394,7 +394,7 @@ right: 5%;
   margin-right: 30px;
 }
 .m2-b1-left p{
-  text-decoration: line-through solid #333 auto
+  text-decoration: line-through solid #333 auto;
 }
 .m2-b1-right{
   background: #f5c4cc;
